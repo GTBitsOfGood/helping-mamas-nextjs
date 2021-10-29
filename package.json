@@ -23,7 +23,7 @@
     "secrets": "npm run secrets:logout && cross-env-shell BW_SESSION=`bw login product@bitsofgood.org --raw` \"npm run secrets:sync\"",
     "secrets:logout": "(bw logout || exit 0)",
     "secrets:login": "bw login product@bitsofgood.org",
-    "secrets:sync": "bw sync && bw get item [ID_OR_NAME_FROM_STEP_2] | fx .notes > \".env\""
+    "secrets:sync": "bw sync && bw get item b8594f56-00eb-4bbd-a446-ad9c0149ecc2 | fx .notes > \".env\""
   },
   "husky": {
     "hooks": {
